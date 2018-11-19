@@ -75,3 +75,26 @@ css:
         test: /\.(eot|ttf|woff|woff2)\w*/,
         loader: 'file-loader'
       }
+
+# css3两列布局 一列定宽 一列百分比 用css3的calc
+https://www.css88.com/book/css/values/functional/calc().htm
+存在的兼容性问题 Android Browser 2.1-4.3不支持	4.4-4.4.4以上部分支持 其他大部分支持
+```
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>calc()函数_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+<style>
+.test {
+	width: calc(100% - 50px);
+	background: #eee;
+}
+</style>
+</head>
+<body>
+<div class="test">我的宽度为100% - 50px</div>
+</body>
+</html>
+```
